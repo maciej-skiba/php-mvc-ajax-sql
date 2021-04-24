@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Forum</title>
+    <meta charset="utf-8"/>    
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+
+<body>
+    <main>  
+        <h1>Delete</h1>
+        <h2>Type in account's character<br/>To delete record</h2>
+    </main>
+    
+    <div id="tresc" tal:condition="exists: tresc" tal:content="tresc"></div>
+    <form action= '' method='POST'>
+        Type in character's name to delete the account: 
+        <input type='text' name='delete'/>
+    </form>  
+  
+
+</body>
+</html>

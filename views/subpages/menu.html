@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Forum</title>
+    <meta charset="utf-8"/> 
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <link rel="icon" href="images/logo.png"/>
+</head>
+<body>
+    <header>
+    <noscript class="crud">JavaScript is off. Website may not work correctly.</noscript>
+    <a href="index.php?page=mainpage"><h1>World of PG</h1><img src="images/school.png" alt="school_icon"/></a>
+        <nav id="nav">
+            <ul>
+                <li tal:condition="admin_logged" ><a href="index.php?page=read" class="crud">Read</a></li>
+                <li tal:condition="admin_logged" ><a href="index.php?page=update" class="crud">Update</a></li>
+                <li tal:condition="admin_logged" ><a href="index.php?page=delete" class="crud">Delete</a></li>
+                <li tal:condition="logged_in"><a href="index.php?page=chat">Chat</a></li>
+                <li><a href="index.php?page=create">Register</a></li>
+                <li tal:condition="logged_out"><a href="index.php?page=login">Login</a></li>
+                <li tal:condition="logged_in_as_user"><a href="index.php?page=account">Account</a></li>
+                <li><a href="index.php?page=mainpage">Main Page</a></li>            
+                <li><a href="index.php?page=gallery">Gallery</a></li>
+                <li tal:condition="logged_in"><a href="logout.php">Logout</a></li>
+            </ul>
+        </nav>        
+    </header>
+</body>
+</html>

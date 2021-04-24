@@ -1,0 +1,382 @@
+@font-face {
+    font-family: "Metropolis-Regular";
+    src: url("include/Metropolis-Light.otf");
+}
+
+
+body{
+    overflow-x: hidden;
+    background-color: rgb(183, 218, 178);
+    font-family: Metropolis-Regular;
+}
+
+header{
+    position: fixed;
+    top: 2%;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 99%;
+    border-radius: 5px;
+    background: white;
+    border: 1px 5px solid black;
+    box-shadow: 1px 1px 10px rgb(69, 99, 69);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+}
+
+a img{
+    top: 10%;
+}
+
+h1{
+    width: 40%;
+    display: inline;
+    padding: 10px;
+    margin-bottom: 10%;
+}
+
+h2{
+    padding: 10px;
+}
+header img{
+    position: relative;
+}
+
+
+nav{
+    float: right;
+    padding: 10px;
+}
+
+nav li, nav ul{
+    display: inline;
+}
+
+nav li{
+    transition: margin-top 0.5s;
+}
+
+nav li:hover{
+    margin-top: 20px;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;  
+    transition: color 0.5s;
+}
+
+nav a:hover{
+    color: rgb(6, 255, 60);
+    
+}
+
+nav a:before{
+    content: '\00bb';
+    opacity:0; 
+}
+
+nav a:after{
+    content: '\00ab';
+    opacity:0; 
+}
+
+ main #read input{
+    float: left;
+    background: rgb(226, 153, 69);
+    color: white;
+    font-size: 150%;
+    border-radius: 10%;
+}
+
+main{
+
+    padding: 20px;
+}
+
+#login_main form{
+    position: fixed;
+    top: 25%;
+    height: 20%;
+}
+
+
+header, body{
+    min-width: 600px;
+}
+
+
+
+#tresc{
+    font-size: 10px;
+    width: 100%;
+    padding: 10px;
+
+}
+
+#mainpage{
+    position: fixed;
+    top: 12%;
+    font-size: 30px;
+    width: 100%;
+    padding: 10px;
+}
+
+#create_form{
+    position: fixed;
+    top: 12%;
+    font-size: 20px;
+    width: 100%;
+    padding: 10px;
+    height: 15%;
+}
+
+#create_form input{
+    height: 35%;
+    border: 3px solid rgba(91, 165, 80, 0.582);
+    font-family: Metropolis-Regular;
+}
+
+#create_form select{
+    height: 35%;
+    border: 3px solid rgba(91, 165, 80, 0.582);
+    font-family: Metropolis-Regular;
+}
+
+#create_submit{
+    color: white;
+    width: 10%;
+    background:rgba(116, 209, 102, 0.582);
+    border: 0px solid white;
+}
+
+#gallery{
+    position: fixed;
+    top: 6%;
+}
+
+
+#tresc tr{
+    display: flex;
+  justify-content: space-between;
+    
+    width: 95vw;
+    border: 2px solid black;
+}
+
+h3{
+    font-size: 25px;
+}
+
+#table1 th{
+    width: 16.67%;
+    float: left;
+    text-align: left;
+}
+
+#table1 td{
+    width: 16.67%;
+    float: left;
+    text-align: left;
+}
+
+#table2 th{
+    width: 25%;
+    float: left;
+    text-align: left;
+}
+
+#table2 td{
+    width: 25%;
+    float: left;
+    text-align: left;
+}
+
+#table3 th{
+    width: 16.67%;
+    float: left;
+    text-align: left;
+}
+
+#table3 td{
+    width: 16.67%;
+    float: left;
+    text-align: left;
+}
+
+#footer{
+    background-color: rgba(91, 165, 80, 0.582);
+    position: fixed;
+    width: 100vw;
+    height: 20%;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    border: 3px solid rgba(63, 114, 55, 0.171);
+}
+
+#footer h1{
+    position: relative;
+    color: rgba(15, 44, 11, 0.582);
+    font-size: 20px;
+    padding: 0;
+    text-shadow: 1px 3px 25px rgba(0, 0, 0, 0.39);
+    width: 100%;
+    top: 40%;
+}
+
+#login_main input{
+    height: 25%;
+    border: 3px solid rgba(91, 165, 80, 0.582);
+    font-family: Metropolis-Regular;
+}
+
+#submit{
+    color: white;
+    font-family: Metropolis-Regular;
+    background-color: rgba(91, 165, 80, 0.582)
+}
+
+.picture{
+    margin: 2% 5%;
+    height: 40%;
+    width: auto;
+    box-shadow: 0px 0px 10px;
+    color: black;
+}
+
+.picture:hover{
+    cursor: pointer;
+}
+
+#gallery_div{
+    overflow: auto;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 55%;
+}
+
+::-webkit-scrollbar {
+    margin-right: 2%;
+    width: 10px;
+    }
+
+::-webkit-scrollbar-track {
+box-shadow: inset 0 0 5px grey; 
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+background:rgba(226, 226, 226);
+border-radius: 10px;
+}
+
+#chat_main{
+    position: fixed;
+    top: 70%;
+    height: 105%;
+    width: 150%;
+}
+
+#chat_main form{
+    height: 15%;
+}
+
+#chat_div{
+    position: fixed;
+    top: 12%;
+    height: 60%;
+    width: 80%;
+    border: 2px solid green;
+}
+
+h5{
+    color: red;
+}
+
+#character_img{
+    position: fixed;
+    display: block;
+    height: 50%;
+    top: 20%;
+    
+    box-shadow: 1px -1px 15px white;
+    border-radius: 10%;
+}
+
+#account{
+    position: relative;
+    top: 5%;
+}
+
+#character_info {
+    background: whitesmoke;
+    width: 40%;
+    display: inline;
+    border-radius: 3%;
+    border: 3px solid gray;
+    box-shadow: 1px -1px 15px white;
+    position: fixed;
+    top: 20%;
+    right: 15%;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 160%;
+
+}
+
+#character_info li{
+    margin: 4%;
+}
+
+.crud{
+    color: rgb(219, 8, 8);
+}
+
+
+#read_div{
+    position: relative;
+    top: 10%;
+}
+
+#requirements{
+    position: fixed;
+    top: 30%;
+    right: 5%;
+}
+
+#zoom{
+    
+    right: 0;
+    position: fixed;
+    width: 100%;
+    height: 50%;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+#zoom_image{
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+    display: block;
+    box-shadow: 2px 2px 15px black;
+}
+
+#cross{
+    position: fixed;
+    display: block;
+    top: 20%;
+    right: 2%;
+}
+
+#cross:hover{
+    cursor: pointer;
+}

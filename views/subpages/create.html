@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Forum</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+
+<body>
+    <main id ="create">  
+        <div id="create_form">
+            <div tal:content="tresc"></div>
+            <form action="" method="post">     
+                <h3 style="margin-bottom: 0;">Personal data</h3><br/>
+                <input type="text" name="Username" placeholder="Username" />
+                <input type="password" name="Password" placeholder="Password" /><br/>
+                <input type="text" name="Email" placeholder="E-mail" />
+                <input type="text" name="ForumNickname" placeholder="ForumNickname" />
+                <br/><br/>
+                <h3 style="margin-bottom: 0;">Character</h3><br/>
+                Name: <input type="text" name="Character" placeholder="Character's name" /><br/>
+                Class:
+                <select name="Class">
+                    <option value="Student">Student</option>
+                    <option value="Engineer">Engineer</option>
+                    <option value="Doctor">Doctor</option>
+                    <option value="Dean">Dean</option>
+                    <option value="Rector">Rector</option>
+                </select><br/>
+                Proffesion 1:
+                <select name="Profession1">
+                    <option value="-">-</option>
+                    <option value="Alchemy">Alchemy</option>
+                    <option value="Engineering">Engineering</option>
+                    <option value="Jewelcrafting">Jewelcrafting</option>
+                    <option value="Tailoring">Tailoring</option>
+                    <option value="Blacksmithing">Blacksmithing</option>
+                </select><br/>
+                Proffesion 2:
+                <select name="Profession2">
+                    <option value="-">-</option>
+                    <option value="Fishing">Fishing</option>
+                    <option value="Mining">Mining</option>
+                    <option value="First Aid">First Aid</option>
+                    <option value="Cooking">Cooking</option>
+                    <option value="Herbalism">Herbalism</option>
+                </select><br/><br/>
+                <div id="requirements">
+                    <h3>Requirements:<br/></h3>
+                    <p>Username should be 3-20 characters long, letters and numbers only<br/>
+                         Password should be 8-25 characters long<br/>
+                         Forum nickname should be 3-20 characters long, letters and numbers only<br/>
+                         Character's name should be 3-15 characters long and contain letters only</p>
+                </div>
+                <input type="submit" id="create_submit" name="submit" value="Create" />
+            </form> 
+        </div>
+
+    </main>
+    
+
+
+</body>
+</html>
+  
