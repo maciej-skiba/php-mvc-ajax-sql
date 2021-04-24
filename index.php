@@ -33,23 +33,29 @@ if(isset($_POST['login_username']) && isset($_POST['login_password'])){
         $user = "admin";
         $welcome = "Logged in as Admnistrator";
     }
-    else{
+    else {
         $user= $_POST['login_username'];
-        $_SESSION['logged_in'] = $user;
-        $query = "SELECT Password FROM Users WHERE Username = '$user'";
+        $query= "SELECT Username FROM Users WHERE Username = '$user'";
         $queryid = $db->query($query);
-        $pass='';
-        while($row = $queryid->fetchArray())
-        {          
-            $pass=$row['Password'];
-        }
-        if($_POST['login_password'] == $pass){
-            $welcome = "Logged in as $user";
-            
+        $row = $queryid->fetchArray()['Username'];
+        if($row)
+        {
+            echo("halo");
             $_SESSION['logged_in'] = $user;
+            $query = "SELECT Password FROM Users WHERE Username = '$user'";
+            $queryid = $db->query($query);
+            $pass='';
+            while($row = $queryid->fetchArray())
+            {          
+                $pass=$row['Password'];
+            }
+            if($_POST['login_password'] == $pass){
+                $welcome = "Logged in as $user";
+                
+                $_SESSION['logged_in'] = $user;
+            }
         }
-    }
-    
+    }   
 }
 
 if(isset($_SESSION['logged_in'])){
